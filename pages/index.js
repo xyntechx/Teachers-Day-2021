@@ -60,7 +60,7 @@ export default function Home() {
             <label className="block text-gray-700 font-bold mb-2 text-xl" htmlFor="loginid">
               Login ID
             </label>
-            <input className="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none border-blue-500" name="loginid" id="loginid" type="text" placeholder="******" required ></input>
+            <input className="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none border-blue-500 text-center text-xl" name="loginid" id="loginid" type="text" placeholder="******" required ></input>
           </div>
           <div className="flex items-center justify-center">
             <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit">
