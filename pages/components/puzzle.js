@@ -3,6 +3,7 @@ import Head from "next/head";
 export default function Puzzle({
     teacher,
     puzzleNumber,
+    title,
     question,
     optionOne,
     optionTwo,
@@ -25,12 +26,16 @@ export default function Puzzle({
         }
 
         event.target.id === correctOption
-            ? alert("✅ That's correct! Here's your letter: " + letter)
+            ? alert("✅ That's correct! Remember this letter: " + letter)
             : alert("❌ Oops! Try again!");
     };
 
+    const back = () => {
+        window.location.href = "/" + teacher.split(" ").join("-").toLowerCase();
+    };
+
     return (
-        <div className="flex flex-col items-center justify-center min-w-max py-20">
+        <div className="flex flex-col items-center justify-center min-w-full py-20 mx-20">
             <Head>
                 <title>
                     {teacher} | Puzzle {puzzleNumber}
@@ -38,10 +43,14 @@ export default function Puzzle({
                 <meta name="description" content="Coded with ❤️ by Nyx" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <main className="flex flex-col items-center justify-center w-full flex-1 px-20 text-center">
-                <h1 className="text-6xl font-bold">Puzzle {puzzleNumber}</h1>
+            <main className="flex flex-col items-center justify-center w-9/12 flex-1 text-center">
+                <h1 className="font-bold text-3xl md:text-6xl">{title}</h1>
 
-                <p className="mt-3 text-2xl">{question}</p>
+                <br></br>
+
+                <p className="mt-3 md:text-xl text-base text-left">
+                    {question}
+                </p>
 
                 <div className="flex flex-wrap items-center justify-around max-w-4xl mt-6 sm:w-full">
                     <button
@@ -51,11 +60,11 @@ export default function Puzzle({
                     >
                         <h3
                             id="optionOne"
-                            className="text-2xl font-bold text-center"
+                            className="font-bold text-center text-lg md:text-2xl"
                         >
                             A
                         </h3>
-                        <p id="optionOne" className="mt-4 text-xl">
+                        <p id="optionOne" className="mt-4 md:text-xl text-base">
                             {optionOne}
                         </p>
                     </button>
@@ -67,11 +76,11 @@ export default function Puzzle({
                     >
                         <h3
                             id="optionTwo"
-                            className="text-2xl font-bold text-center"
+                            className="font-bold text-center text-lg md:text-2xl"
                         >
                             B
                         </h3>
-                        <p id="optionTwo" className="mt-4 text-xl">
+                        <p id="optionTwo" className="mt-4 md:text-xl text-base">
                             {optionTwo}
                         </p>
                     </button>
@@ -83,11 +92,14 @@ export default function Puzzle({
                     >
                         <h3
                             id="optionThree"
-                            className="text-2xl font-bold text-center"
+                            className="font-bold text-center text-lg md:text-2xl"
                         >
                             C
                         </h3>
-                        <p id="optionThree" className="mt-4 text-xl">
+                        <p
+                            id="optionThree"
+                            className="mt-4 md:text-xl text-base"
+                        >
                             {optionThree}
                         </p>
                     </button>
@@ -99,15 +111,30 @@ export default function Puzzle({
                     >
                         <h3
                             id="optionFour"
-                            className="text-2xl font-bold text-center"
+                            className="font-bold text-center text-lg md:text-2xl"
                         >
                             D
                         </h3>
-                        <p id="optionFour" className="mt-4 text-xl">
+                        <p
+                            id="optionFour"
+                            className="mt-4 md:text-xl text-base"
+                        >
                             {optionFour}
                         </p>
                     </button>
                 </div>
+
+                <br></br>
+                <br></br>
+
+                <a
+                    onClick={back}
+                    className="p-6 mt-6 text-center border w-96 rounded-xl hover:text-blue-600 hover:cursor-pointer focus:text-blue-600"
+                >
+                    <h3 className="font-bold text-lg md:text-2xl">
+                        &larr; Back
+                    </h3>
+                </a>
             </main>
         </div>
     );
