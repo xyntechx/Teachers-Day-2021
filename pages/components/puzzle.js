@@ -48,7 +48,7 @@ export default function Puzzle({
 
                 <br></br>
 
-                <p className="mt-3 md:text-xl text-base text-left">
+                <p className="mt-3 md:text-xl text-base">
                     {question}
                 </p>
 
@@ -56,7 +56,7 @@ export default function Puzzle({
                     <button
                         id="optionOne"
                         onClick={submitAnswer}
-                        className="p-6 mt-6 text-left border border-red-600 w-96 rounded-xl hover:bg-red-600 hover:bg-opacity-70 focus:bg-red-600 focus:bg-opacity-70"
+                        className="p-6 mt-6 border border-red-600 w-96 rounded-xl hover:bg-red-600 hover:bg-opacity-70 focus:bg-red-600 focus:bg-opacity-70"
                     >
                         <h3
                             id="optionOne"
@@ -72,7 +72,7 @@ export default function Puzzle({
                     <button
                         id="optionTwo"
                         onClick={submitAnswer}
-                        className="p-6 mt-6 text-left border border-green-600 w-96 rounded-xl hover:bg-green-600 hover:bg-opacity-70 focus:bg-green-600 focus:bg-opacity-70"
+                        className="p-6 mt-6  border border-green-600 w-96 rounded-xl hover:bg-green-600 hover:bg-opacity-70 focus:bg-green-600 focus:bg-opacity-70"
                     >
                         <h3
                             id="optionTwo"
@@ -88,7 +88,7 @@ export default function Puzzle({
                     <button
                         id="optionThree"
                         onClick={submitAnswer}
-                        className="p-6 mt-6 text-left border border-blue-600 w-96 rounded-xl hover:bg-blue-600 hover:bg-opacity-70 focus:bg-blue-600 focus:bg-opacity-70"
+                        className="p-6 mt-6  border border-blue-600 w-96 rounded-xl hover:bg-blue-600 hover:bg-opacity-70 focus:bg-blue-600 focus:bg-opacity-70"
                     >
                         <h3
                             id="optionThree"
@@ -107,7 +107,7 @@ export default function Puzzle({
                     <button
                         id="optionFour"
                         onClick={submitAnswer}
-                        className="p-6 mt-6 text-left border border-yellow-400 w-96 rounded-xl hover:bg-yellow-400 hover:bg-opacity-70 focus:bg-yellow-400 focus:bg-opacity-70"
+                        className="p-6 mt-6  border border-yellow-400 w-96 rounded-xl hover:bg-yellow-400 hover:bg-opacity-70 focus:bg-yellow-400 focus:bg-opacity-70"
                     >
                         <h3
                             id="optionFour"
