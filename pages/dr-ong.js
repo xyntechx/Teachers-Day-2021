@@ -23,7 +23,7 @@ export default function DrOng() {
             : alert("Please input the right passcode 👀");
     };
     return (
-        <div className="flex flex-col items-center justify-center w-screen h-full py-10">
+        <div className="flex flex-col items-center justify-center min-h-screen py-10">
             <Head>
                 <title>Happy Teachers' Day, Dr Ong</title>
                 <meta name="description" content="Coded with ❤️ by Nyx" />
@@ -31,7 +31,7 @@ export default function DrOng() {
             </Head>
 
             <main className="flex flex-col items-center justify-center w-9/12 flex-1 text-center">
-                <h1 className="font-bold text-3xl md:text-6xl">
+                <h1 className="font-bold text-5xl md:text-6xl">
                     Welcome, Dr Ong!
                 </h1>
 
@@ -45,7 +45,7 @@ export default function DrOng() {
                 <div className="flex flex-wrap items-center justify-around max-w-4xl mt-6 sm:w-full">
                     <a
                         href="/dr-ong/puzzle-one"
-                        className="p-6 mt-6  border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
+                        className="p-6 mt-6 border w-72 md:w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
                     >
                         <h3 className="font-bold text-center text-lg md:text-2xl">
                             Puzzle 1️⃣ &rarr;
@@ -57,7 +57,7 @@ export default function DrOng() {
 
                     <a
                         href="/dr-ong/puzzle-two"
-                        className="p-6 mt-6  border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
+                        className="p-6 mt-6 border w-72 md:w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
                     >
                         <h3 className="font-bold text-center text-lg md:text-2xl">
                             Puzzle 2️⃣ &rarr;
@@ -70,7 +70,7 @@ export default function DrOng() {
 
                     <a
                         href="/dr-ong/puzzle-three"
-                        className="p-6 mt-6  border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
+                        className="p-6 mt-6 border w-72 md:w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
                     >
                         <h3 className="font-bold text-center text-lg md:text-2xl">
                             Puzzle 3️⃣ &rarr;
@@ -83,7 +83,7 @@ export default function DrOng() {
 
                     <a
                         href="/dr-ong/puzzle-four"
-                        className="p-6 mt-6  border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
+                        className="p-6 mt-6 border w-72 md:w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
                     >
                         <h3 className="font-bold text-center text-lg md:text-2xl">
                             Puzzle 4️⃣ &rarr;
@@ -107,7 +107,7 @@ export default function DrOng() {
                             The 4 letters from the 4 puzzles
                         </label>
                         <input
-                            className="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none border-blue-500 text-center text-xl"
+                            className="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight border-blue-500 text-center text-xl focus:bg-blue-200 focus:outline-none"
                             name="passcode"
                             id="passcode"
                             type="text"
