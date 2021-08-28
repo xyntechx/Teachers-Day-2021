@@ -62,7 +62,7 @@ export default function Home() {
                             Login ID
                         </label>
                         <input
-                            className="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none border-blue-500 text-center text-xl"
+                            className="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight border-blue-500 text-center text-xl focus:bg-blue-200 focus:outline-none"
                             name="loginid"
                             id="loginid"
                             type="text"
