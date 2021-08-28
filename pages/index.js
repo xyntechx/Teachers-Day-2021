@@ -4,7 +4,7 @@ export default function Home() {
   const registerUser = async event => {
     event.preventDefault()
 
-    const res = await fetch("/api/hello", {
+    const res = await fetch("/api/backend", {
       body: JSON.stringify({
         loginid: event.target.loginid.value
       }),
