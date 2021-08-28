@@ -8,12 +8,14 @@ export default function DrOngThree() {
                 puzzleNumber={3}
                 title={"Famous Quotes à la Dr Ong"}
                 question={"You say these motivational quotes to us, except..."}
-                optionOne={"'Success is not final; failure is not fatal: it is the courage to continue that counts.'"}
+                optionOne={
+                    "'Success is not final; failure is not fatal: it is the courage to continue that counts.'"
+                }
                 optionTwo={"'#keeplearning #keepimproving'"}
                 optionThree={"'... Habits of Mind ...'"}
                 optionFour={"'LEVEL UP!'"}
                 correctOption={"optionFour"}
             ></Puzzle>
         </div>
-    )
+    );
 }

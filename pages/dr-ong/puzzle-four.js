@@ -15,5 +15,5 @@ export default function DrOngFour() {
                 correctOption={"optionOne"}
             ></Puzzle>
         </div>
-    )
+    );
 }
