@@ -1,7 +1,7 @@
 import Head from "next/head"
 
 export default function Home() {
-  const registerUser = async event => {
+  const login = async event => {
     event.preventDefault()
 
     const res = await fetch("/api/backend", {
@@ -55,7 +55,7 @@ export default function Home() {
         <br></br>
         <br></br>
 
-        <form onSubmit={registerUser}>
+        <form onSubmit={login}>
           <div className="mb-4">
             <label className="block text-gray-700 font-bold mb-2 text-xl" htmlFor="loginid">
               Login ID
