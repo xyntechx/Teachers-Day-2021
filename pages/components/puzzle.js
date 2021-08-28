@@ -48,9 +48,7 @@ export default function Puzzle({
 
                 <br></br>
 
-                <p className="mt-3 md:text-xl text-base">
-                    {question}
-                </p>
+                <p className="mt-3 md:text-xl text-base">{question}</p>
 
                 <div className="flex flex-wrap items-center justify-around max-w-4xl mt-6 sm:w-full">
                     <button
