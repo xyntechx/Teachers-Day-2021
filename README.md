@@ -7,5 +7,9 @@ A website for my teachers!
 
 ## 🔨 Usage
 ```bash
+npm install next react react-dom
+```
+
+```bash
 npm run dev
 ```
