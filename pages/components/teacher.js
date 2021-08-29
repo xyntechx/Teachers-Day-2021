@@ -8,15 +8,6 @@ export default function Teacher({
     puzzleThree,
     puzzleFour,
 }) {
-    const redirect = async (event) => {
-        event.preventDefault();
-        window.location.href =
-            "/" +
-            teacher.split(" ").join("-").toLowerCase() +
-            "/puzzle-" +
-            event.target.id;
-    };
-
     return (
         <div className="flex flex-col items-center justify-center min-h-screen py-10">
             <Head>
@@ -39,20 +30,29 @@ export default function Teacher({
 
                 <div className="flex flex-wrap items-center justify-around max-w-4xl mt-6 sm:w-full">
                     <a
-                        id="one"
-                        onClick={redirect}
+                        href={
+                            "/" +
+                            teacher.split(" ").join("-").toLowerCase() +
+                            "/puzzle-one"
+                        }
                         className="p-6 mt-6 border w-72 md:w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
                     >
                         <h3
-                            id="one"
-                            onClick={redirect}
+                            href={
+                                "/" +
+                                teacher.split(" ").join("-").toLowerCase() +
+                                "/puzzle-one"
+                            }
                             className="font-bold text-center text-lg md:text-2xl"
                         >
                             Puzzle 1️⃣ &rarr;
                         </h3>
                         <p
-                            id="one"
-                            onClick={redirect}
+                            href={
+                                "/" +
+                                teacher.split(" ").join("-").toLowerCase() +
+                                "/puzzle-one"
+                            }
                             className="mt-4 md:text-xl text-base"
                         >
                             {puzzleOne}
@@ -60,20 +60,29 @@ export default function Teacher({
                     </a>
 
                     <a
-                        id="two"
-                        onClick={redirect}
+                        href={
+                            "/" +
+                            teacher.split(" ").join("-").toLowerCase() +
+                            "/puzzle-two"
+                        }
                         className="p-6 mt-6 border w-72 md:w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
                     >
                         <h3
-                            id="two"
-                            onClick={redirect}
+                            href={
+                                "/" +
+                                teacher.split(" ").join("-").toLowerCase() +
+                                "/puzzle-two"
+                            }
                             className="font-bold text-center text-lg md:text-2xl"
                         >
                             Puzzle 2️⃣ &rarr;
                         </h3>
                         <p
-                            id="two"
-                            onClick={redirect}
+                            href={
+                                "/" +
+                                teacher.split(" ").join("-").toLowerCase() +
+                                "/puzzle-two"
+                            }
                             className="mt-4 md:text-xl text-base"
                         >
                             {puzzleTwo}
@@ -81,20 +90,29 @@ export default function Teacher({
                     </a>
 
                     <a
-                        id="three"
-                        onClick={redirect}
+                        href={
+                            "/" +
+                            teacher.split(" ").join("-").toLowerCase() +
+                            "/puzzle-three"
+                        }
                         className="p-6 mt-6 border w-72 md:w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
                     >
                         <h3
-                            id="three"
-                            onClick={redirect}
+                            href={
+                                "/" +
+                                teacher.split(" ").join("-").toLowerCase() +
+                                "/puzzle-three"
+                            }
                             className="font-bold text-center text-lg md:text-2xl"
                         >
                             Puzzle 3️⃣ &rarr;
                         </h3>
                         <p
-                            id="three"
-                            onClick={redirect}
+                            href={
+                                "/" +
+                                teacher.split(" ").join("-").toLowerCase() +
+                                "/puzzle-three"
+                            }
                             className="mt-4 md:text-xl text-base"
                         >
                             {puzzleThree}
@@ -102,20 +120,29 @@ export default function Teacher({
                     </a>
 
                     <a
-                        id="four"
-                        onClick={redirect}
+                        href={
+                            "/" +
+                            teacher.split(" ").join("-").toLowerCase() +
+                            "/puzzle-four"
+                        }
                         className="p-6 mt-6 border w-72 md:w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
                     >
                         <h3
-                            id="four"
-                            onClick={redirect}
+                            href={
+                                "/" +
+                                teacher.split(" ").join("-").toLowerCase() +
+                                "/puzzle-four"
+                            }
                             className="font-bold text-center text-lg md:text-2xl"
                         >
                             Puzzle 4️⃣ &rarr;
                         </h3>
                         <p
-                            id="four"
-                            onClick={redirect}
+                            href={
+                                "/" +
+                                teacher.split(" ").join("-").toLowerCase() +
+                                "/puzzle-four"
+                            }
                             className="mt-4 md:text-xl text-base"
                         >
                             {puzzleFour}
