@@ -56,7 +56,7 @@ export default function DrOng() {
                             Puzzle 3️⃣ &rarr;
                         </h3>
                         <p className="mt-4 md:text-xl text-base">
-                            Identify your famous quote and get your third
+                            Identify your famous quotes and get your third
                             letter!
                         </p>
                     </a>
