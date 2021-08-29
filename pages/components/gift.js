@@ -1,6 +1,6 @@
 import Head from "next/head";
 
-export default function Gift({teacher, video}) {
+export default function Gift({teacher, videoTitle}) {
     return (
         <div className="flex flex-col items-center justify-center min-w-full min-h-screen py-10">
             <Head>
@@ -20,7 +20,7 @@ export default function Gift({teacher, video}) {
                 <br></br>
 
                 <video className="w-1/2" controls>
-                    <source src={video} />
+                    <source src={"/" + videoTitle + ".mov"} />
                 </video>
 
                 <br></br>
