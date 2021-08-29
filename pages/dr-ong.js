@@ -2,27 +2,6 @@ import Head from "next/head";
 import Unlock from "./components/unlock";
 
 export default function DrOng() {
-    const unlock = async (event) => {
-        event.preventDefault();
-
-        const res = await fetch("/api/unlock", {
-            body: JSON.stringify({
-                passcode: event.target.passcode.value,
-            }),
-            headers: {
-                "Content-Type": "application/json",
-            },
-            method: "POST",
-        });
-
-        // I was too lazy to use environment variables 😂
-        const PASSCODE = "CHER";
-
-        const result = await res.json();
-        result.passcode === PASSCODE
-            ? (window.location.href = "/dr-ong/gift")
-            : alert("Please input the right passcode 👀");
-    };
     return (
         <div className="flex flex-col items-center justify-center min-h-screen py-10">
             <Head>
