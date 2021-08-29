@@ -30,10 +30,6 @@ export default function Puzzle({
             : alert("❌ Oops! Try again!");
     };
 
-    const back = () => {
-        window.location.href = "/" + teacher.split(" ").join("-").toLowerCase();
-    };
-
     return (
         <div className="flex flex-col items-center justify-center min-w-full min-h-screen py-10">
             <Head>
@@ -126,8 +122,8 @@ export default function Puzzle({
                 <br></br>
 
                 <a
-                    onClick={back}
-                    className="p-6 mt-6 text-center border w-72 md:w-96 rounded-xl hover:text-blue-600 hover:cursor-pointer focus:text-blue-600"
+                    href={"/" + teacher.split(" ").join("-").toLowerCase()}
+                    className="p-6 mt-6 text-center border w-72 md:w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
                 >
                     <h3 className="font-bold text-lg md:text-2xl">
                         &larr; Back
