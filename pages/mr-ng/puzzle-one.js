@@ -10,7 +10,7 @@ export default function MrNgOne() {
             optionOne={"Organic Chem"}
             optionTwo={"Physical Chem"}
             optionThree={"Inorganic Chem"}
-            optionFour={"Bruh who are we kidding we love it all 😆"}
+            optionFour={"Bruh who are we kidding we love them all 😆"}
             correctOption={"optionFour"}
         ></Puzzle>
     );

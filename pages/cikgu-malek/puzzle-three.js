@@ -12,7 +12,7 @@ export default function CikguMalekThree() {
             optionOne={"Tiada rotan akar berguna"}
             optionTwo={"Tangan mencencang bahu memikul"}
             optionThree={"Ringan tulang berat perut"}
-            optionFour={"Ditatang bagai minyak yang penuh "}
+            optionFour={"Ditatang bagai minyak yang penuh"}
             correctOption={"optionOne"}
         ></Puzzle>
     );
