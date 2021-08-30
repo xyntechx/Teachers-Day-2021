@@ -21,7 +21,7 @@ export default function Gift({ teacher, videoTitle }) {
 
                 <br></br>
 
-                <video className="w-1/2" controls>
+                <video className="w-96 md:w-1/2" controls>
                     <source src={"/" + videoTitle + ".mov"} />
                 </video>
 
