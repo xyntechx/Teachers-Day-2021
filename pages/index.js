@@ -14,7 +14,7 @@ export default function Home() {
             method: "POST",
         });
 
-        // If you are reading this, I would like to thank you for taking the time to view the code for the website!
+        // If you are reading this, I would like to thank you for taking the time to view the code for the website 🙏
         // However, please do NOT use the Login IDs which are not yours 😁
         // I was too lazy to use environment variables 😂
         const ID_TEACHERS = {
