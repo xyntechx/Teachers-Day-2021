@@ -1,6 +1,9 @@
 import Head from "next/head";
 
 export default function Gift({ teacher, videoTitle }) {
+    teacher = "_";
+    videoTitle = "_";
+    
     return (
         <div className="flex flex-col items-center justify-center min-w-full min-h-screen py-10">
             <Head>

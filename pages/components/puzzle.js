@@ -11,6 +11,16 @@ export default function Puzzle({
     optionFour,
     correctOption,
 }) {
+    teacher = "_";
+    puzzleNumber = "_";
+    title = "_";
+    question = "_";
+    optionOne = "_";
+    optionTwo = "_";
+    optionThree = "_";
+    optionFour = "_";
+    correctOption = "_";
+    
     const submitAnswer = async (event) => {
         event.preventDefault();
         var letter;

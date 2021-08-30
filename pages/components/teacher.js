@@ -8,6 +8,12 @@ export default function Teacher({
     puzzleThree,
     puzzleFour,
 }) {
+    teacher = "_";
+    puzzleOne = "_";
+    puzzleTwo = "_";
+    puzzleThree = "_";
+    puzzleFour = "_";
+
     return (
         <div className="flex flex-col items-center justify-center min-h-screen py-10">
             <Head>

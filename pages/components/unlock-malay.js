@@ -1,4 +1,6 @@
 export default function Unlock({ teacher }) {
+    teacher = "_";
+
     const unlock = async (event) => {
         event.preventDefault();
 
