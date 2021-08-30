@@ -86,8 +86,10 @@ export default function Home() {
                 <p className="mt-3 text-xl">
                     Check out the code for this website (by yours truly){" "}
                     <a
-                        className="text-blue-600"
+                        className="text-blue-600 hover:font-bold"
                         href="https://github.com/xyntechx/Teachers-Day-2021"
+                        target="_blank"
+                        rel="noopener noreferrer"
                     >
                         here
                     </a>
