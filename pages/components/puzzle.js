@@ -11,16 +11,16 @@ export default function Puzzle({
     optionFour,
     correctOption,
 }) {
-    teacher = "_";
-    puzzleNumber = "_";
-    title = "_";
-    question = "_";
-    optionOne = "_";
-    optionTwo = "_";
-    optionThree = "_";
-    optionFour = "_";
-    correctOption = "_";
-    
+    if (teacher === undefined) teacher = "_";
+    if (puzzleNumber === undefined) puzzleNumber = "_";
+    if (title === undefined) title = "_";
+    if (question === undefined) question = "_";
+    if (optionOne === undefined) optionOne = "_";
+    if (optionTwo === undefined) optionTwo = "_";
+    if (optionThree === undefined) optionThree = "_";
+    if (optionFour === undefined) optionFour = "_";
+    if (correctOption === undefined) correctOption = "_";
+
     const submitAnswer = async (event) => {
         event.preventDefault();
         var letter;
