@@ -15,7 +15,7 @@ export default function Home() {
         });
 
         // If you are reading this, I would like to thank you for taking the time to view the code for the website!
-        // However, please do NOT use the Login IDs which are not yours!
+        // However, please do NOT use the Login IDs which are not yours 😁
         // I was too lazy to use environment variables 😂
         const ID_TEACHERS = {
             458585: "dr-ong",
