@@ -14,8 +14,7 @@ export default function Unlock({ teacher }) {
             method: "POST",
         });
 
-        // I was too lazy to use environment variables 😂
-        const PASSCODE = "CHER";
+        const PASSCODE = process.env.NEXT_PUBLIC_PASSCODE;
 
         const result = await res.json();
         result.passcode.toUpperCase() === PASSCODE
