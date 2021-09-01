@@ -14,26 +14,27 @@ export default function Home() {
             method: "POST",
         });
 
-        // If you are reading this, I would like to thank you for taking the time to view the code for the website 🙏
-        // However, please do NOT use the Login IDs which are not yours 😁
-        // I was too lazy to use environment variables 😂
-        const ID_TEACHERS = {
-            458585: "dr-ong",
-            892002: "mr-wong",
-            172391: "mr-ng",
-            374716: "ms-lin",
-            339540: "ms-avadhani",
-            675202: "mrs-tan",
-            144588: "ms-leong",
-            466877: "mr-iqbal",
-            778037: "cikgu-malek",
+        const TEACHERS_ID = {
+            "dr-ong": process.env.NEXT_PUBLIC_DR_ONG,
+            "mr-wong": process.env.NEXT_PUBLIC_MR_WONG,
+            "mr-ng": process.env.NEXT_PUBLIC_MR_NG,
+            "ms-lin": process.env.NEXT_PUBLIC_MS_LIN,
+            "ms-avadhani": process.env.NEXT_PUBLIC_MS_AVADHANI,
+            "mrs-tan": process.env.NEXT_PUBLIC_MRS_TAN,
+            "ms-leong": process.env.NEXT_PUBLIC_MS_LEONG,
+            "mr-iqbal": process.env.NEXT_PUBLIC_MR_IQBAL,
+            "cikgu-malek": process.env.NEXT_PUBLIC_CIKGU_MALEK,
         };
 
-        const IDS = Object.keys(ID_TEACHERS);
+        const IDS = Object.values(TEACHERS_ID);
+
+        function getKeyByValue(object, value) {
+            return Object.keys(object).find(key => object[key] === value);
+        }
 
         const result = await res.json();
         IDS.includes(result.loginid)
-            ? (window.location.href = "/" + ID_TEACHERS[result.loginid])
+            ? (window.location.href = "/" + getKeyByValue(TEACHERS_ID, result.loginid))
             : alert("Please input a valid Login ID 👀");
     };
 
