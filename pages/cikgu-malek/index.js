@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Unlock from "../components/unlock-malay";
+import Unlock from "../../components/unlock-malay";
 
 export default function CikguMalek() {
     return (

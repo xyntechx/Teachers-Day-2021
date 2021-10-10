@@ -1,4 +1,4 @@
-import Teacher from "../components/teacher";
+import Teacher from "../../components/teacher";
 
 export default function MrNg() {
     return (
