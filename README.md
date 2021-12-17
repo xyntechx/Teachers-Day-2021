@@ -7,7 +7,7 @@ A [website](https://teachers-day-2021.vercel.app/) for my teachers!
 
 ## 🔨 Usage
 ```bash
-npm install next react react-dom
+npm install
 ```
 
 ```bash
